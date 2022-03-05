@@ -1,5 +1,6 @@
 const PORT = process.env.PORT || 8001;
 const ENV = require("./environment");
+// console.log("process.env", process.env)
 
 const app = require("./application")(ENV, { updateAppointment });
 const server = require("http").Server(app);
